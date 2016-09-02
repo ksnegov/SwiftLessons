@@ -71,6 +71,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="Reset"/>
+                                        <connections>
+                                            <action selector="tapLapButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="KWp-db-rWZ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.84056637216404884" green="0.84056637216404884" blue="0.84056637216404884" alpha="1" colorSpace="calibratedRGB"/>
@@ -100,6 +103,20 @@
                                 <color key="backgroundColor" red="0.84056637219999997" green="0.84056637219999997" blue="0.84056637219999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.84056637219999997" green="0.84056637219999997" blue="0.84056637219999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LapCell" id="AJU-c5-83q">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AJU-c5-83q" id="eBZ-Pa-WDk">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.84056637219999997" green="0.84056637219999997" blue="0.84056637219999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="3Kr-BU-iP3"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -134,11 +151,14 @@
                     <connections>
                         <outlet property="displayLabel" destination="Vnf-Ig-3AI" id="imy-EO-ZE7"/>
                         <outlet property="fireButton" destination="Srg-SR-5du" id="4d3-Do-snN"/>
+                        <outlet property="lapButton" destination="M0B-79-Ork" id="jLT-4l-IL1"/>
+                        <outlet property="lapDisplayLabel" destination="ipv-gQ-19a" id="DT4-5V-TG8"/>
+                        <outlet property="lapsTableView" destination="Pto-XW-EBz" id="X3w-Mh-3zK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1017" y="436"/>
+            <point key="canvasLocation" x="947" y="436"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Jjw-ae-ew2">
