@@ -58,6 +58,9 @@
                                             <constraint firstAttribute="width" secondItem="Srg-SR-5du" secondAttribute="height" multiplier="1:1" id="CEi-ub-bdI"/>
                                         </constraints>
                                         <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="tapFireButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="B5y-qZ-HFq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0B-79-Ork">
                                         <rect key="frame" x="120" y="34" width="80" height="80"/>
@@ -128,6 +131,10 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Stopwatch" id="TuL-5r-nEt"/>
+                    <connections>
+                        <outlet property="displayLabel" destination="Vnf-Ig-3AI" id="imy-EO-ZE7"/>
+                        <outlet property="fireButton" destination="Srg-SR-5du" id="4d3-Do-snN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
